@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+		<div class="container">
+      <input id="document" type="file" />
+      <div class="row">
+        <div class="span8">
+          <div id="output" class="well">
+          </div>
+        </div>
+		</div>
+		
+
+    <!--  <script src="scripts/mammoth.js"></script>
+    <script>
+      function parseWordDocxFile(inputElement) {
+        var files = inputElement.files || [];
+        if (!files.length) return;
+        var file = files[0];
+
+        console.time();
+        var reader = new FileReader();
+        reader.onloadend = function (event) {
+          var arrayBuffer = reader.result;
+          // debugger
+
+          mammoth
+            .convertToHtml({ arrayBuffer: arrayBuffer })
+            .then(function (resultObject) {
+              result1.innerHTML = resultObject.value;
+              console.log(resultObject.value);
+            });
+          console.timeEnd();
+
+          mammoth
+            .extractRawText({ arrayBuffer: arrayBuffer })
+            .then(function (resultObject) {
+              result2.innerHTML = resultObject.value;
+              console.log(resultObject.value);
+            });
+
+          mammoth
+            .convertToMarkdown({ arrayBuffer: arrayBuffer })
+            .then(function (resultObject) {
+              result3.innerHTML = resultObject.value;
+              console.log(resultObject.value);
+            });
+        };
+        reader.readAsArrayBuffer(file);
+      }
+    </script> -->
+  </body>
+  <script src="scripts/main.js"></script>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "docxtohtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docx2html": "^1.1.0",
+    "file2html": "^0.2.0",
+    "file2html-ooxml": "^0.2.2",
+    "file2html-text": "^0.2.0",
+    "mammoth": "^1.4.11"
+  }
+}
